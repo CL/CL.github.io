@@ -14,6 +14,7 @@ $("#login-button").click(function(event){
 
 function download()
 {
-    let queryId = document.getElementById('query-id').textContent;
+    let queryId = document.getElementById('query-id').value;
+    
     window.open('https://mrv-sharedfunction-dev.azurewebsites.net/api/CicleTimeReport?queryId='+queryId);
 }
